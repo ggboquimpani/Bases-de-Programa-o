@@ -68,7 +68,7 @@ int main(){
 	//confirma a compra, dando data dela e da entrega, ou retorna para o carrinho
 	printf("Deseja finalizar a compra?\n");
 	printf("1.Finalizar\n");
-	printf("0.Continuar comprando");
+	printf("0.Continuar comprando\n");
 	scanf("%d", &finaliza);
 	if (finaliza==1){
 		printf("\nData da compra: ");

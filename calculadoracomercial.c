@@ -1,3 +1,13 @@
+/*
+O que está faltando?
+
+1. Preco do frete, preco total, data e hora da compra;
+2. previsão de entrega, modularizacao;
+3. preco de frete e compra eh so botar uma adicao no laco "do" e mostrar no fim; e
+4. nao sei como se adiciona dias a uma data, a modularizacao acho que eh so botar cada um desses blocos numa funcao.
+
+*/
+
 #include <stdio.h>
 
 int n; //numero de produtos no carrinho
@@ -9,14 +19,6 @@ float peso[100]; //vetor do peso dos produtos
 float preco[100]; //vetor do preco dos produtos
 int pagamento; //confirmacao de ir para o pagamento
 int finaliza; //confirmacao de finalizar a compra
-
-/*
-Faltando: preco do frete, preco total, data e hora da compra,
-previsao de entrega, modularizacao.
-Preco de frete e compra eh so botar uma adicao no laco "do" e mostrar no fim.
-Nao sei como se adiciona dias a uma data, a modularizacao acho que eh so botar cada um desses blocos numa funcao.
-
-*/
 
 int main(){
 	

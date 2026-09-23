@@ -44,7 +44,7 @@ int main(){
 	} while (carrinho == 1);
 	
 	//imprime o resumo da compra
-	for(i = n; i--; i>0){
+	for(i = 0; i < n; ++i){
 			printf("Codigo: %d", codigo[i]);
 			printf("\nProduto: %s", nome[i]);
 			printf("\nPeso: %.2f", peso[i]);

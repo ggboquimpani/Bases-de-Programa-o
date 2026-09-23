@@ -7,8 +7,8 @@ char nome[100][50]; //vetor dos nomes dos produtos
 int regiao[100]; //vetor da regiao de entrega dos produtos
 float peso[100]; //vetor do peso dos produtos
 float preco[100]; //vetor do preco dos produtos
-int confirma = 0; //confirmacao da compra
-int carrinho = 1; //continuar comprando
+int pagamento; //confirmacao de ir para o pagamento
+int finaliza; //confirmacao de finalizar a compra
 
 /*
 Faltando: preco do frete, preco total, data e hora da compra,
@@ -36,12 +36,12 @@ int main(){
 		printf("3.Nordeste\n");
 		printf("4.Norte\n");
 		scanf("%d", &regiao[n]);
-		printf("\n1.Deseja adicionar mais produtos ao carrinho?\n");
-		printf("0.Ir para pagamento.\n");
+		printf("\n1.Ir para pagamento\n");
+		printf("0.Continuar comprando\n");
 		n++;
-		scanf("%d",&carrinho);
+		scanf("%d",&pagamento);
 		printf("\n");
-	} while (carrinho == 1);
+	} while (pagamento != 1);
 	
 	//imprime o resumo da compra
 	for(i = 0; i < n; ++i){
@@ -66,12 +66,12 @@ int main(){
 	}
 	
 	//confirma a compra, dando data dela e da entrega, ou retorna para o carrinho
-	printf("Deseja confirmar a compra?\n");
-	printf("1.Confirmar\n");
-	printf("0.Adicionar mais produtos");
-	scanf("%d", &confirma);
-	if (confirma==1){
-		printf("\nData da compra: \n");
+	printf("Deseja finalizar a compra?\n");
+	printf("1.Finalizar\n");
+	printf("0.Continuar comprando");
+	scanf("%d", &finaliza);
+	if (finaliza==1){
+		printf("\nData da compra: ");
 		printf("\nPrevisao de entrega: ");
 	}
 	else{

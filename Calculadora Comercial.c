@@ -1,3 +1,8 @@
+// Eduardo dos Santos Araujo
+// Érick Patrocínio Pappacena
+// Gabriel Guimarães Boquimpani
+// Miguel Araujo dos Santos
+
 #include <stdio.h>
 #include <time.h>
 
